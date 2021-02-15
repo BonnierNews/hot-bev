@@ -1,0 +1,15 @@
+{
+  "name": "@bonniernews/no-bev",
+  "version": "1.0.0",
+  "description": "Mocha reporter for larger applications. Compact output and immediate failure logging. No need for hot-bev' breaks during test script.",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Bonnier News AB",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^8.3.0"
+  }
+}
