@@ -1,5 +1,7 @@
-import {strict as assert} from "assert";
-import {default as makeTimestamp} from "../lib/timestamp.js";
+"use strict";
+
+const assert = require("assert/strict");
+const makeTimestamp = require("../lib/timestamp");
 
 describe("timestamp", () => {
   it("short duration in milliseconds", () => {
@@ -9,7 +11,7 @@ describe("timestamp", () => {
 
   it("medium duration in seconds", () => {
     const timestamp = makeTimestamp(35789);
-    assert.equal(timestamp, "35.7 s");
+    assert.equal(timestamp, "35.8 s");
   });
 
   it("long duration in minutes and seconds", () => {
