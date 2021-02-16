@@ -1,6 +1,12 @@
-# No-bev
+# Hot Bev'
 
-No-bev reporter for Mocha. Compact output with immediate failure logging.
+Hot Bev' reporter for Mocha.
 
-Good for large / long running test suites.
+Compact output and immediate failure reporting. Good for large / long running test suites.
 
+## Setup
+
+```sh
+$ npm install --save-dev @bonniernews/hot-bev
+$ npx mocha --reporter @bonniernews/hot-bev
+```

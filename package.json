@@ -1,13 +1,20 @@
 {
-  "name": "@bonniernews/no-bev",
+  "name": "@bonniernews/hot-bev",
   "version": "1.0.0",
-  "description": "Mocha reporter for larger applications. Compact output and immediate failure logging. No need for hot-bev' breaks during test script.",
+  "description": "Mocha reporter for larger applications. Compact output and immediate failure logging.",
   "main": "index.js",
-  "scripts": {
-    "test": "mocha"
+  "files": [
+    "lib/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/BonnierNews/hot-bev.git"
   },
-  "author": "Bonnier News AB",
-  "license": "ISC",
+  "scripts": {
+    "test": "mocha -R ./lib/reporter.js"
+  },
+  "author": "Bonnier News",
+  "license": "MIT",
   "dependencies": {
     "mocha": "^8.3.0"
   }
