@@ -1,6 +1,6 @@
 "use strict";
 
-const assert = require("assert/strict");
+const {strict: assert} = require("assert");
 const makeTimestamp = require("../lib/timestamp");
 
 describe("timestamp", () => {
