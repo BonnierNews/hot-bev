@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - Output rearranged to better work for both modes
+- More compact output
 - Fixed changelog
 
 ## [0.2.0] - 2021-02-19
