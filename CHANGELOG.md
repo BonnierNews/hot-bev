@@ -5,6 +5,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- Non interactive mode for non TTY terminals
+
+### Changed
+- Output rearranged to better work for both modes
+- More compact output
+- Fixed changelog
+
+## [0.2.0] - 2021-02-19
 ### Changed
 - Use readline module for print.clear to not break in non TTY terminals
 
