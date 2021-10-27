@@ -1,6 +1,6 @@
 {
   "name": "@bonniernews/hot-bev",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Mocha reporter for larger applications. Compact output and immediate failure logging.",
   "main": "index.js",
   "files": [
