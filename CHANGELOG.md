@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Changed
 - Calculate total in parallel mode
+- Mocha as peer dependency
 
 ## [0.3.0] - 2021-02-24
 ### Added
