@@ -5,6 +5,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Changed
+- Support mocha@12
+- Require node `^20.19.0 || >=22.12.0`
+- Build with GitHub Actions, including a mocha 10, 11, and 12 compatibility matrix
+- Tests for reporter, print, and index
+- Lint with eslint
+
+### Removed
+- `is-interactive` dependency, the check is inlined
 
 ## [0.4.0] - 2021-10-27
 ### Changed

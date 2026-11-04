@@ -1,0 +1,42 @@
+name: Build
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      matrix:
+        node-version: [20, 22, 24, latest]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v7
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm i --loglevel error
+      - run: npm test
+
+  mocha-compat:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      matrix:
+        mocha-version: [10, 11, 12]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+      - name: Use Node.js from .nvmrc
+        uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+      - run: npm i --loglevel error
+      - run: npm i --no-save --loglevel error mocha@${{ matrix.mocha-version }}
+      - run: npx mocha --version
+      - run: npm test

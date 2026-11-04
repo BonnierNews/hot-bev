@@ -1,0 +1,4 @@
+{
+  "spec": "test/**/*-test.js",
+  "reporter": "./lib/reporter.js"
+}

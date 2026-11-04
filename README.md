@@ -1,5 +1,7 @@
 # Hot Bev'
 
+[![Build](https://github.com/BonnierNews/hot-bev/actions/workflows/build.yaml/badge.svg)](https://github.com/BonnierNews/hot-bev/actions/workflows/build.yaml)
+
 Reporter for Mocha.
 
 Compact output and immediate failure reporting. Good for large / long running test suites.
